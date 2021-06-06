@@ -43,8 +43,7 @@ function getCurrentWeatherData(searchTerm)
         })
         .catch(function(error)
         {
-            //TODO: Replace with better handling
-            alert(error);
+            $(".error-message").text(error);
         });
 }
 
@@ -81,13 +80,14 @@ function getOneCallWeatherData(lat, lon)
         })
         .catch(function(error)
         {
-            //TODO: Replace with better handling
-            alert(error);
+            $(".error-message").text(error);
         });
 }
 
 function displayData()
 {
+    $(".error-message").text("");
+
     //Create Current Weather Card
     var cardBody = $("<div>").addClass("card-body");
     var currentTime = moment(currentWeatherDay.time, "X");
