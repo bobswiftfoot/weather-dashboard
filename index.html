@@ -22,18 +22,15 @@
             <div class="row">
                 <div class="col-3">
                     <h2 class="text-center">Search for City:</h2>
-                    <input type="text" class="form-control mb-2" placeholder="City Name">
-                    <div class="d-grid border-bottom border-2 pb-3">
-                        <button class="btn btn-info" type="button">Search</button>
-                    </div>
-                    <ul class="list-group pt-3">
-                        <!--TODO: REMOVE THIS EXAMPLE-->
-                        <li class="list-group-item list-group-item-secondary text-center">Atlanta</li>
-                    </ul>
+                    <form class="form-input row m-1 border-2 border-bottom pb-2">
+                        <input type="text" class="form-control mb-2 search-input col-9" placeholder="City Name">
+                        <button class="btn btn-info search-btn" type="submit">Search</button>
+                    </form>
+                    <ul class="list-group prevous-list"></ul>
                 </div>
                 <div class="col-9">
                     <div class="current-weather card"></div>
-                    <h3>5 Day Forecast:</h3>
+                    <h3 class="mt-1">5 Day Forecast:</h3>
                     <div class="row future-weather"></div> 
                 </div>
             </div>
