@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1 class="text-center">
+        <h1 class="text-center bg-primary bg-gradient">
             Weather Dashboard
         </h1>
     </header>
@@ -32,75 +32,17 @@
                     </ul>
                 </div>
                 <div class="col-9">
-                    <div class="current-weather card">
-                        <div class="card-body">
-                            <h3 class="card-title">Atlanta (06/02/2021)</h3>
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" />
-                            <p class="card-text">Temp:</p>
-                            <p class="card-text">Wind Speed:</p>
-                            <p class="card-text">Humidity:</p>
-                            <p class="card-text">UV Index:</p>
-                        </div>
-                    </div>
+                    <div class="current-weather card"></div>
                     <h3>5 Day Forecast:</h3>
-                    <div class="row justify-content-between future-weather">
-                        <!--TODO: REMOVE THIS EXAMPLE-->
-                        <div class="card col-2">
-                            <div class="card-body">
-                                <h4 class="card-title">Wenesday</h4>
-                                <h5 class="card-text">06/03/2021</h5>
-                                <p class="card-text">Temp:</p>
-                                <p class="card-text">Wind Speed:</p>
-                                <p class="card-text">Humidity:</p>
-                                <p class="card-text">UV Index:</p>
-                            </div>
-                        </div>
-                        <div class="card col-2">
-                            <div class="card-body">
-                                <h4 class="card-title">Wenesday</h4>
-                                <h5 class="card-text">06/03/2021</h5>
-                                <p class="card-text">Temp:</p>
-                                <p class="card-text">Wind Speed:</p>
-                                <p class="card-text">Humidity:</p>
-                                <p class="card-text">UV Index:</p>
-                            </div>
-                        </div>
-                        <div class="card col-2">
-                            <div class="card-body">
-                                <h4 class="card-title">Wenesday</h4>
-                                <h5 class="card-text">06/03/2021</h5>
-                                <p class="card-text">Temp:</p>
-                                <p class="card-text">Wind Speed:</p>
-                                <p class="card-text">Humidity:</p>
-                                <p class="card-text">UV Index:</p>
-                            </div>
-                        </div>
-                        <div class="card col-2">
-                            <div class="card-body">
-                                <h4 class="card-title">Wenesday</h4>
-                                <h5 class="card-text">06/03/2021</h5>
-                                <p class="card-text">Temp:</p>
-                                <p class="card-text">Wind Speed:</p>
-                                <p class="card-text">Humidity:</p>
-                                <p class="card-text">UV Index:</p>
-                            </div>
-                        </div>
-                        <div class="card col-2">
-                            <div class="card-body">
-                                <h4 class="card-title">Wenesday</h4>
-                                <h5 class="card-text">06/03/2021</h5>
-                                <p class="card-text">Temp:</p>
-                                <p class="card-text">Wind Speed:</p>
-                                <p class="card-text">Humidity:</p>
-                                <p class="card-text">UV Index:</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="row future-weather"></div> 
                 </div>
             </div>
         </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
         integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
