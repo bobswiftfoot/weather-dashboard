@@ -106,10 +106,10 @@ function displayData()
     for(var i = 0; i < 5; i++)
     {
         //Create Future Weather Card
-        var cardColumn = $("<div>").addClass("card col-2 m-2 bg-info");
+        var cardColumn = $("<div>").addClass("card col-10 col-md-4 col-lg-3 col-xxl-2 m-2 bg-info");
         var cardBody = $("<div>").addClass("card-body");
         var currentTime = moment(futureWeatherDays[i].time, "X");
-        var cardHeader = $("<h4>").addClass("card-title").text(currentTime.format("dddd"));
+        var cardHeader = $("<h5>").addClass("card-title").text(currentTime.format("dddd"));
         var cardDate = $("<h5>").addClass("card-text").text(currentTime.format("(MM/DD/YYYY)"));
         var cardImg = $("<img>").attr("src", iconUrl.replace("{var}", futureWeatherDays[i].icon));
         var cardTemp = $("<p>").addClass("card-text").text("Temp: " + futureWeatherDays[i].temp);

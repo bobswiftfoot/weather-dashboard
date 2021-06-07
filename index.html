@@ -13,23 +13,23 @@
 
 <body>
     <header>
-        <h1 class="text-center bg-primary bg-gradient">
+        <h1 class="text-center bg-primary bg-gradient p-2">
             Weather Dashboard
         </h1>
     </header>
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-md-3">
                     <h2 class="text-center">Search for City:</h2>
                     <form class="form-input row">
                         <input type="text" class="form-control mb-2 search-input col-9" placeholder="City Name">
                         <button class="btn btn-info search-btn" type="submit">Search</button>
                     </form>
                     <p class="text-center error-message m-1 border-2 border-bottom pb-2"></p>
-                    <ul class="list-group prevous-list"></ul>
+                    <ul class="list-group prevous-list mb-2"></ul>
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-md-9">
                     <div class="current-weather card"></div>
                     <h3 class="mt-1">5 Day Forecast:</h3>
                     <div class="row future-weather"></div> 
